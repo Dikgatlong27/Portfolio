@@ -1,7 +1,34 @@
 .my-name {
-    background: #63a10095;
+    background: #63a100d5;
     color: #ddd;
     width: fit-content;
-    padding: 5px 15px;
-    
+    padding: 5px 10px;  
+    font-size: 1.5vmax; 
+    margin-bottom: 1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-buttons a {
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    font-size: 2vmax; 
+    margin-top: 2rem;
+}
+
+.hire-me {
+    background: #0130cb;
+    color: #fff;
+    border: 2px groove #000000ad;
+    text-decoration: none;
+}
+
+.resume {
+    background: #06c10039;
+    color: #005819;
+    border: 1px groove #0058193a;
+    text-decoration: none;
 }
