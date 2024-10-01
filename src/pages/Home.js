@@ -1,13 +1,13 @@
 import React from 'react'
 import { Navbar, Footer } from '../components';
-import Hero from '../container'
+import{ Hero, About }  from '../container'
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      
+      <About />
       <Footer />
     </div>
   )

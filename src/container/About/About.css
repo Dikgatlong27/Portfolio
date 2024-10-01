@@ -1,0 +1,15 @@
+.about-section {
+    background-color: #fff;
+}
+
+.about-info {
+    text-align: center;
+}
+
+.skill-card p {
+    background: #0130cb;
+    color: #fff;    
+    margin: 5px;
+    padding: 5px 10px;
+
+}
