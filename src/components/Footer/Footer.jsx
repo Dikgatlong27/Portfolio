@@ -21,11 +21,11 @@ const Footer = () => {
       <div className="get-in-touch">
         <h4 className="icon">Find Me</h4>
         <div className="icons">
-          <FaLinkedinIn className='icon' />
-          <FaGithub className='icon' />
-          <FaWhatsapp className='icon' />
-          <MdCall className='icon' />
-          <MdOutlineMailOutline className='icon' />
+          <a href="https://www.linkedin.com/in/tebogo-dikgatlong/" target="_blank" rel="noopener noreferrer" className='icon'><FaLinkedinIn /></a>
+          <a href="https://github.com/Dikgatlong27" target="_blank" rel="noopener noreferrer" className='icon'><FaGithub /></a>
+          <a href="https://wa.me/27676228529?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20experience%20in%20web%20development." target="_blank" rel="noopener noreferrer"><FaWhatsapp className='icon' /></a>
+          <a href="tel:+27676228529" target="_blank" rel="noopener noreferrer" className='icon'><MdCall /></a>
+          <a href="mailto:tpdikgatlong@gmail.com" target="_blank" rel="noopener noreferrer" className='icon'><MdOutlineMailOutline /></a>
         </div>
       </div>
     </footer>

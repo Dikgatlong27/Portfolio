@@ -11,7 +11,7 @@ const Hero = () => {
         <p>Experienced frontend developer with passion for creating virtually stunning and user-friendly websites</p>
         <div className="hero-buttons">
             <a className='hire-me' href="https://wa.me/+27676228529" target="_blank" rel="noopener noreferrer">Hire Me</a>
-            <a className='resume' href='#' download="Tebo_resume.pdf">Download CV</a>
+            <a className='resume' href='/resume.pdf' download="resume.pdf"><button>Download CV</button></a>
         </div> 
         </div>
       
