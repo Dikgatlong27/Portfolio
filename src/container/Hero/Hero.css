@@ -1,9 +1,20 @@
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.content {
+    max-width: 600px;
+}
+
 .my-name {
     background: #63a100d5;
     color: #ddd;
     width: fit-content;
     padding: 5px 10px;  
-    font-size: 1.5vmax; 
+    font-size: 1vmax; 
     margin-bottom: 1rem;
 }
 
@@ -15,8 +26,8 @@
 .hero-buttons a {
     padding: .5rem 1rem;
     border-radius: .5rem;
-    font-size: 2vmax; 
-    margin-top: 2rem;
+    font-size: 15px; 
+    margin-top: 1rem;
 }
 
 .hire-me {
@@ -31,4 +42,73 @@
     color: #005819;
     border: 1px groove #0058193a;
     text-decoration: none;
+}
+
+.social {
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    gap: 2rem;
+}
+
+.social .social-icon {
+    font-size: 3rem;
+    color: var(--bg-main);
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,1);
+    background-color: #464646d2;
+    margin-top: 4rem;
+}
+
+.pro-pic {
+    width: 30vmax;
+    border-radius: 50%;
+}
+
+.pro-pic img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1030px) {
+
+    .content {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .hero-container {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .content {
+        max-width: 500px;
+    }
+
+    .pro-pic {
+        width: 7rem;
+        margin: 3rem 0 5rem 0;
+    }
+
+    #heading {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .hero-buttons a {
+        padding: .3rem .7rem;
+        font-size: 13px; 
+        margin-top: 2rem;
+    }
+
+    .social .social-icon {
+        font-size: 2rem;
+        color: var(--bg-main);
+        border-radius: 100%;
+        box-shadow: 0px 0px 3px -1px rgba(0,0,0,1);
+        background-color: #464646d2;
+        margin: 3rem 0;
+    }
 }

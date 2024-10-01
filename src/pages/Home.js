@@ -1,10 +1,14 @@
 import React from 'react'
+import { Navbar, Footer } from '../components';
 import Hero from '../container'
 
 const Home = () => {
   return (
-    <div id='home'>
+    <div>
+      <Navbar />
       <Hero />
+      
+      <Footer />
     </div>
   )
 }
