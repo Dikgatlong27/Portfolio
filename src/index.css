@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-main: #DAFFD7;
+    --bg-color: #faf7d7;
+    --main-color: #00b132;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+body {
+    font-family: "Laila", serif;
+    font-style: normal;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.41);
+}
+
+.skew {
+    transform: scale(1.1) skew(-23deg) translate(-68px,0px);
+    -webkit-transform: scale(1.1) skew(-16deg) translate(-68px,15px);
+    -moz-transform: scale(1.1) skew(-23deg) translate(-68px,3px);
+}
+
+.slide-rotate-hor-top {
+	-webkit-animation: slide-rotate-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: slide-rotate-hor-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+
+@-webkit-keyframes slide-rotate-hor-top {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0deg);
+              transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: translateY(-150px) rotateX(-90deg);
+              transform: translateY(-150px) rotateX(-90deg);
+    }
+  }
+  @keyframes slide-rotate-hor-top {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0deg);
+              transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: translateY(-150px) rotateX(-90deg);
+              transform: translateY(-150px) rotateX(-90deg);
+    }
+  }
+  
+ 
