@@ -2,11 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
+    margin: 0 2rem;
+    height: 100vh;
 }
 
 .content {
-    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .my-name {
@@ -61,19 +65,25 @@
 }
 
 .pro-pic {
-    width: 30vmax;
     border-radius: 50%;
 }
 
 .pro-pic img {
-    width: 100%;
+    width: 500px;
     border-radius: 50%;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1050px) {
 
-    .content {
-        width: 350px;
+    .pro-pic img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .pro-pic img {
+        width: 300px;
     }
 }
 
@@ -81,20 +91,21 @@
 
     .hero-container {
         flex-direction: column-reverse;
-        height: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .content {
-        max-width: 500px;
+        width: 100%;
     }
 
-    .pro-pic {
-        width: 7rem;
-        margin: 3rem 0 5rem 0;
+    .content p {
+        text-align: center;
     }
 
-    #heading {
-        margin-bottom: 1.5rem !important;
+    .pro-pic img {
+        width: 4rem;
+        margin-bottom: 6rem;
     }
 
     .hero-buttons a {

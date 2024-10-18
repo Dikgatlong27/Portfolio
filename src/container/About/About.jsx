@@ -4,7 +4,7 @@ import './About.css'
 
 const About = () => {
   return (
-    <div className='about-section container flex-col'>
+    <div className='about-section container'>
       <h1>About Me</h1>
       <div className="about-info flex-space">
         <div className="content">
@@ -14,16 +14,21 @@ const About = () => {
         </div>
         <div className="skills flex-center">
             <div className="skill-card">
-                <p>HTML</p>
-                <p>HTML</p>
-                <p>HTML</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript (ES6+)</p>
             </div>
             <div className="skill-card">
-            <p>HTML</p>
-            <p>HTML</p>
-            <p>HTML</p>
+              <p>React.js Development</p>
+              <p>Figma for UI/UX Design</p>
+              <p>Version Control (Git/GitHub)</p>
             </div>
         </div>
+      </div>
+
+      <div className="mission">
+        <h3>adfafadsfasfdasf</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem libero saepe consequatur. Molestiae iste reiciendis blanditiis delectus vel suscipit nostrum quo maxime reprehenderit sequi fuga aperiam iure magni non quae nulla, sapiente ab, dolor praesentium? Quas, consectetur, libero est ea maiores commodi labore corrupti excepturi et reiciendis sunt sint. Totam!</p>
       </div>
     </div>
   )

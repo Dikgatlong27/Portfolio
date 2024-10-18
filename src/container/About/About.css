@@ -1,15 +1,99 @@
-.about-section {
-    background-color: #fff;
+.about-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.about-section h1 {
+    text-align: center;
+}
+
+.content {
+    width: 50%;
+}
+
+.content h3 {
+    margin-bottom: 1rem;
 }
 
 .about-info {
     text-align: center;
 }
 
+.skills {
+    width: 50%;
+}
+
 .skill-card p {
     background: #0130cb;
-    color: #fff;    
-    margin: 5px;
-    padding: 5px 10px;
+    color: #fff; 
+    margin: 1.5rem;
+    padding: 1rem 1.5rem;
+}
 
+.mission {
+    text-align: center;
+    max-width: 600px;
+    margin: 4rem auto 0 auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .about-info {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-section h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .content h3 {
+        margin-bottom: 1rem;
+    }
+
+    .skills {
+      width: 100%;
+    }
+
+    .mission {
+        text-align: center;
+        max-width: 600px;
+        margin: 2rem auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .skill-card p {
+        margin: 1rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-section {
+        margin-top: 4rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .skills {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .skill-card p {
+        font-size: 12px;  
+        margin: .5rem;
+        padding: .5rem 1rem;
+    }
 }
