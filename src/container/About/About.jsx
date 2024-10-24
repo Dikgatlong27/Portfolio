@@ -25,11 +25,6 @@ const About = () => {
             </div>
         </div>
       </div>
-
-      <div className="mission">
-        <h3>adfafadsfasfdasf</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem libero saepe consequatur. Molestiae iste reiciendis blanditiis delectus vel suscipit nostrum quo maxime reprehenderit sequi fuga aperiam iure magni non quae nulla, sapiente ab, dolor praesentium? Quas, consectetur, libero est ea maiores commodi labore corrupti excepturi et reiciendis sunt sint. Totam!</p>
-      </div>
     </div>
   )
 }

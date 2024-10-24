@@ -1,125 +1,123 @@
+/* src/components/Hero.css */
+
 .hero-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2rem;
-    height: 100vh;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-name {
-    background: #63a100d5;
-    color: #ddd;
-    width: fit-content;
-    padding: 5px 10px;  
-    font-size: 1vmax; 
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  
+  .my-name {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #heading {
+    font-size: 4rem;
+    font-weight: 700;
     margin-bottom: 1rem;
-}
-
-.hero-buttons {
+    color: #00b132;
+  }
+  
+  #heading span {
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .hero-buttons {
     display: flex;
-    gap: 2rem;
-}
-
-.hero-buttons a {
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    font-size: 15px; 
-    margin-top: 1rem;
-}
-
-.hire-me {
-    background: #0130cb;
-    color: #fff;
-    border: 2px groove #000000ad;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hire-me, .resume {
+    padding: 12px 25px;
     text-decoration: none;
-}
-
-.resume {
-    background: #06c10039;
-    color: #005819;
-    border: 1px groove #0058193a;
-    text-decoration: none;
-}
-
-.social {
-    display: flex;
-    justify-content: start;
-    align-self: center;
-    gap: 2rem;
-}
-
-.social .social-icon {
-    font-size: 3rem;
-    color: var(--bg-main);
-    border-radius: 100%;
-    box-shadow: 0px 0px 5px -1px rgba(0,0,0,1);
-    background-color: #464646d2;
-    margin-top: 4rem;
-}
-
-.pro-pic {
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hire-me {
+    background-color: #00b132;
+    color: white;
+  }
+  
+  .hire-me:hover {
+    background-color: #009928;
+  }
+  
+  .resume {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .resume:hover {
+    background-color: #0056b3;
+  }
+  
+  .social {
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #007bff;
+  }
+  
+  .pro-pic {
+    display: block;
+    max-width: 200px;
     border-radius: 50%;
-}
-
-.pro-pic img {
-    width: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pro-pic img {
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 50%;
-}
-
-@media screen and (max-width: 1050px) {
-
-    .pro-pic img {
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-
-    .pro-pic img {
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-
+  }
+  
+  @media (max-width: 768px) {
     .hero-container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+      flex-direction: column-reverse;
+      text-align: center;
     }
-
+  
     .content {
-        width: 100%;
+      margin-bottom: 40px;
     }
-
-    .content p {
-        text-align: center;
+  
+    #heading {
+      font-size: 2.5rem;
     }
-
-    .pro-pic img {
-        width: 4rem;
-        margin-bottom: 6rem;
+  
+    .pro-pic {
+      max-width: 150px;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
     }
-
-    .hero-buttons a {
-        padding: .3rem .7rem;
-        font-size: 13px; 
-        margin-top: 2rem;
-    }
-
-    .social .social-icon {
-        font-size: 2rem;
-        color: var(--bg-main);
-        border-radius: 100%;
-        box-shadow: 0px 0px 3px -1px rgba(0,0,0,1);
-        background-color: #464646d2;
-        margin: 3rem 0;
-    }
-}
+  }
+  

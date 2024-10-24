@@ -16,9 +16,12 @@ const Hero = () => {
                 <a className='resume' href='/resume.pdf'>Download CV</a>
             </div> 
             <div className="social">
-                <FaGithub className="social-icon" />
-                <ImLinkedin className="social-icon" />
-                <FaFacebook className="social-icon" />
+                <a href="https://github.com/Dikgatlong27" target="_blank" rel="noopener noreferrer">
+                    <FaGithub className="social-icon" />
+                </a>
+                <a href="https://www.linkedin.com/in/tebogo-dikgatlong/" target="_blank" rel="noopener noreferrer">
+                    <ImLinkedin className="social-icon" />
+                </a>
             </div>
         </div>
 
