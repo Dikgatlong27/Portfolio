@@ -4,13 +4,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 20px;
     background-color: #f9f9f9;
     min-height: 100vh;
   }
   
   .content {
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .my-name {
@@ -87,7 +90,7 @@
   
   .pro-pic {
     display: block;
-    max-width: 200px;
+    max-width: 400px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -118,6 +121,14 @@
       max-width: 150px;
       margin-top: 4rem;
       margin-bottom: 4rem;
+      
     }
   }
   
+  @media (max-width: 1150px) {
+    
+    .pro-pic {
+      width: 275px;
+    }
+
+  }

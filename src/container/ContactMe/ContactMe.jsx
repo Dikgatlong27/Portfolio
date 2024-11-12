@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
 import './ContactMe.css';
 
 const ContactMe = () => {
@@ -15,11 +17,10 @@ const ContactMe = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission (e.g., send data to a backend or an email service)
-    alert(`Message sent by ${formData.name}!`);
-  };
+  const [state, handleSubmit] = useForm("xdkoavyq");
+  if (state.succeeded) {
+      return <p style={{height: '100vh', marginTop: '2rem'}}>Your message has been received, I will get back to you shortly. Thanks for contacting me!</p>;
+  }
 
   return (
     <div className="contact-section container">
@@ -36,6 +37,7 @@ const ContactMe = () => {
             onChange={handleChange}
             required
           />
+          <ValidationError prefix='Name' field='name' errors={state.errors} />
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
@@ -47,6 +49,7 @@ const ContactMe = () => {
             onChange={handleChange}
             required
           />
+          <ValidationError prefix='Email' field='email' errors={state.errors} />
         </div>
         <div className="form-group">
           <label htmlFor="message">Message</label>
@@ -57,6 +60,7 @@ const ContactMe = () => {
             onChange={handleChange}
             required
           />
+          <ValidationError prefix='Message' field='message' errors={state.errors} />
         </div>
         <button type="submit" className="submit-btn">Send Message</button>
       </form>

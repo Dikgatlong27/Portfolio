@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaFacebook } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
 import './Hero.css'
 
@@ -25,10 +25,11 @@ const Hero = () => {
             </div>
         </div>
 
+        
         <a href='pp.png' download='MyProPic.png' className="pro-pic">
             <img src="pp.png" alt="Profile Pic" srcset="" />
         </a>
-      
+        
     </div>
   )
 }
